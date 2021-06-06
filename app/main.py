@@ -4,7 +4,7 @@ app= Flask(__name__)
 
 @app.route('/webhook', methods=['POST'])
 def webhook():
-    sk = Skype('devbrat.pandey@appwrk.com', 'January@2021')
+    sk = Skype('rajesh.panwar@appwrk.com', 'appwrk@grow123')
     if request.method == 'POST':
         print(request.json)
         channel = sk.chats.chat('19:752974eaf3f0483fa061f440e906318f@thread.skype')
